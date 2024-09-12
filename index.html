@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Registration Form</h1>
+    </center>
+     <fieldset>
+        <fieldset>
+            <legend>Personal Details</legend>
+        <form>
+        <label for="username">firstname:</label>
+        <input type="text" name="firstname" id="firstname" placeholder="firstname" required> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="lastname">lastname:</label>
+        <input type="text" name="lastname" id="lastname" placeholder="lastname" required>
+        <br>
+        <br>
+        <label for="username">fathername:</label>
+        <input typr="text" name="fathername" id="fathername" placeholder="fathername" required>
+        <br>
+        <br>
+        <label for="email"> Enter your Email:</label>
+        <input type="email" name="Email" id="Email" placeholder="Email" required> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="DOB">DOB:</label>
+        <input type="date" name="DOB" id="DOB" required>
+        <br>
+        <br>
+        <label for="ph number">ph number:</label>
+        <input type="text" id="phone" name="phone"
+               pattern="\d{10}" 
+               maxlength="10" 
+               title="Please enter exactly 10 digits."
+               placeholder="Enter 10-digit phone number"
+               required>
+        <br>
+        <br>
+        <label for="Address">Address:</label>
+        <input type="text" name="Address" id="Address">&nbsp;&nbsp;
+        <label for="state">State:</label>
+        <input list="State">
+  <datalist id="State">
+    <option value="Telagana">
+    <option value="Kerala">
+    <option value="Tamilnadu">
+    <option value="Mumbai">
+    <option value="Delhi">
+  </datalist>
+        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="pin code">PIN CODE:</label>
+        <input type="text" id="pin code" name="pin code"  maxlength="6"  required>
+    </fieldset>
+    <br>
+        <fieldset>
+            <legend>Education Details</legend>
+            <label for="B.Tech">B.Tech:</label>
+            <input type="text" name="B.Tech" id="B.Tech" placeholder="course" required>
+            <br>
+            <label for="python">pthon</label>
+            <input type="checkbox" id="python" name="python">
+            <label for="java">java</label>
+            <input type="checkbox" id="java" name="java">
+            <label for="java">core java</label>
+            <input type="checkbox" id="core java" name=" core java">
+            <label for="python">data analyst</label>
+            <input type="checkbox" id="data analyst" name="data Analyst">
+            <label for="python">ui&ux designer</label>
+            <input type="checkbox" id="ui&ux designer" name="ui&ux designer">
+           <br>
+            <br>
+            <label for="Intermediate">Intermediate:</label>
+            <input type="text" name="Intermediate" id="Intermediate" placeholder="Intermediate" required>
+            <input list="courses">
+  <datalist id="course">
+    <option value="mpc">
+    <option value="bipc">
+    <option value="cec">
+    <option value="hec">
+  </datalist>
+        </fieldset>
+    <br>
+        <fieldset>
+            <legend>skills</legend>
+            <label for="skills">skills:</label>
+            <input type="text" name="skills" id="skills" placeholder="skills" required>
+            <select id="skills">
+                <option value=""></option>
+                <option value="python">python</option>
+                <option value="java">java</option>
+                <option value="core java">core java</option>
+                <option value="c++">c++</option>
+                <option value="java script">java script</option>
+            </select>
+            <br>
+            <br>
+             <label for="languages">languages:</label>
+             <input type="text" name="languages" id="languages" placeholder="languages" required>
+             <select id="languages">
+                <option value=""></option>
+                <option value="English">English</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Hindi">Hindi</option>
+             </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Job Offers</legend>
+            <labbel for="jobs">jobs:</labbel>
+            <input type="text" name="jobs" id="jobs" placeholder="jobs" required>
+            <select id="preferences">
+                <option value=""></option>
+                <option value="front-end delevoper">front-end-delevoper</option>
+                <option value="back-end-delevoper">back-end-delevoper</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="UI&UX Designer">UI&UX Designer</option>
+            </select>
+            <br>
+            <br>
+            <label for="fresher">fresher:</label>
+            <input type="text" name="fresher" id="fresher" required>
+            <label for="experience">Experience:</label>
+            <input type="text" name="Experience" id="Experience" required>
+            <select id="Experience">
+                <option value=""></option>
+                <option value="2years">2years</option>
+                <option value="3years">3years</option>
+                <option value="5years">5years</option>
+            </select>
+        </fieldset>
+        <center>
+            <input type="submit" id="submit" required>
+        </center>
+    </fieldset>
+    </form>
+</body>
+</html>
